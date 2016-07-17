@@ -58,13 +58,20 @@ class ORM
      */
     public function persist($entity_instance)
     {
+        //transaction.- start.
+        $this->connection->getSource()->beginTransaction();
+
+        //try to persist object and commit for confirm changes
+        try{
+
+            $this->connection->getSource()->commit();
+        }catch (\Exception $ex){
+            
+            //revert transaction
+            $this->connection->getSource()->rollBack();
+        }
+
         $type = gettype($entity_instance);
-
-        /*if ($type == 'array'){
-            foreach ($entity_instance as $key => $element){
-
-            }
-        }*/
 
         $dbtable = $entity_instance->getDbname();
         $this->logger->add("orm", $dbtable);

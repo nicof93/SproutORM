@@ -21,11 +21,11 @@ class Generator
         $pencil = new Pencil();
         $name = ucfirst($entity->getName());
 
-        if (!is_dir("Entities")){
-            mkdir("Entities");
+        if (!is_dir("../Entities")){
+            mkdir("../Entities");
         }
 
-            $handle = fopen("Entities/".$name.'.php', 'w');
+            $handle = fopen("../Entities/".$name.'.php', 'w');
         fwrite($handle,"<?php\nrequire_once (__DIR__).'\..\util\Entity.php';\n\nclass ".$name." extends \util\Entity \n{\n\n");
 
         foreach ($entity->getAttributes() as $key => $attr){
