@@ -27,4 +27,30 @@
 <h1>Insert|update for test</h1>
 
 </body>
+<footer class="page-footer" style="bottom: 0px;background-color: #26a69a">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">
+                    ORM para mapeo y persistencia de batos. Admite multiples motores SQL (MySql, Oracle, SQL Server, SQLite)
+                    creado el 16-07-2016. Actualmente se encuantra en desarrollo y sin ninguna versión estable.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Sprout</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Test Actions</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Documentation</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">About...</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2016 Nicolas Diaz | Blackrobot
+        </div>
+    </div>
+</footer>
 </html>
